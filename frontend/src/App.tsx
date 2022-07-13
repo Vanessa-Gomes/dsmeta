@@ -1,4 +1,6 @@
 import './index.css'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from "./components/NotificationButton"
 import Header from "./components/Header"
 import SalesCard from "./components/SalesCard"
@@ -15,10 +17,20 @@ function App() {
               <h2 className="dsmeta-sales-title">Vendas</h2>
               <div>
                 <div className="dsmeta-form-control-conteiner">
-                  <input className="dsmeta-form-control" type="text"/>
+                  <DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                  />
                 </div>
                 <div className="dsmeta-form-control-conteiner">
-                  <input className="dsmeta-form-control" type="text"/>
+                  <DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                  />
                 </div>
               </div>
               <div>
@@ -44,7 +56,7 @@ function App() {
                       <td>R$ 55300.00</td>
                       <td>
                         <div className="dsmeta-red-btn-conteiner">
-                          <NotificationButton/>
+                          <NotificationButton />
                         </div>
                       </td>
                     </tr>
@@ -57,7 +69,7 @@ function App() {
                       <td>R$ 55300.00</td>
                       <td>
                         <div className="dsmeta-red-btn-conteiner">
-                          <NotificationButton/>
+                          <NotificationButton />
                         </div>
                       </td>
                     </tr>
@@ -70,7 +82,7 @@ function App() {
                       <td>R$ 55300.00</td>
                       <td>
                         <div className="dsmeta-red-btn-conteiner">
-                          <NotificationButton/>
+                          <NotificationButton />
                         </div>
                       </td>
                     </tr>
