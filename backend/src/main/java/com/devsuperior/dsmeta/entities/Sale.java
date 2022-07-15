@@ -32,11 +32,11 @@ public class Sale {
 		this.id = id;
 	}
 
-	public String getSeller_name() {
+	public String getSellerName() {
 		return sellerName;
 	}
 
-	public void setSeller_name(String seller_name) {
+	public void setSellerName(String seller_name) {
 		this.sellerName = seller_name;
 	}
 
