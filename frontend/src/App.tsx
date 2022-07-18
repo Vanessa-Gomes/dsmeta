@@ -1,13 +1,9 @@
-import './index.css'
-import DatePicker from "react-datepicker";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "react-datepicker/dist/react-datepicker.css";
-import NotificationButton from "./components/NotificationButton"
 import Header from "./components/Header"
 import SalesCard from "./components/SalesCard"
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { BASE_URL } from './utils/request';
-import { Sale } from './models/sales';
+
 
 
 function App() {
@@ -15,6 +11,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer/>
       <Header />
       <main>
         <section id="sales">
